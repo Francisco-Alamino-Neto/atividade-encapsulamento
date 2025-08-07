@@ -42,7 +42,7 @@ public class Main {
 			}
 			
 			
-		} while (menu != 5);
+		} while (menu != 6);
 		sc.close();
 
 	}

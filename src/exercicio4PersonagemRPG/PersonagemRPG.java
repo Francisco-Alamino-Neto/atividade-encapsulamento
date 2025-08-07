@@ -27,19 +27,19 @@ public class PersonagemRPG {
 	}
 
 	public void setVida(int vida) {
-		if (vida > 100 && vida < 0) {
-			System.out.println("Vida inválida");
-		} else {
+		if (vida < 100 && vida > 0) {
 			this.vida = vida;
+		} else {
+			System.out.println("Vida inválida");
 		}
 	}
 	
 	public String toString() {
 	return "--Características do personagem--"
-			+ "\n1 Nome: " + nome
-			+ "\n2 Classe: " + classe
-			+ "\n3 Nível: " + nivel
-			+ "\n4 Vida: " + vida;
+			+ "\n1 - Nome: " + nome
+			+ "\n2 - Classe: " + classe
+			+ "\n3 - Nível: " + nivel
+			+ "\n4 - Vida: " + vida;
 		}
 	
 }
