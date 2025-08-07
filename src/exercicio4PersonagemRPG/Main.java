@@ -23,10 +23,10 @@ public class Main {
 			
 			if (menu == 1) {
 				System.out.println("Insira o nome: ");
-				pers.setNome(sc.next());
+				pers.setNome(sc.nextLine());
 			} else if (menu == 2) {
 				System.out.println("Insira a classe: ");
-				pers.setClasse(sc.next());
+				pers.setClasse(sc.nextLine());
 			} else if (menu == 3) {
 				System.out.println("Insira o nível: ");
 				pers.setNivel(sc.nextInt());

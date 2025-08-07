@@ -21,7 +21,7 @@ public class Main {
 		
 			if (menu == 1) {
 				System.out.println("Insira seu nome: ");
-				pessoa.setNome(sc.next());
+				pessoa.setNome(sc.nextLine());
 			} else if (menu == 2) {
 				System.out.println("Insira sua idade: ");
 				pessoa.setIdade(sc.nextInt());

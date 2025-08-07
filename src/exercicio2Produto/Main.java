@@ -22,7 +22,7 @@ public class Main {
 		
 			if (menu == 1) {
 				System.out.println("Insira o nome: ");
-				prod.setNome(sc.next());
+				prod.setNome(sc.nextLine());
 			} else if (menu == 2) {
 				System.out.println("Insira o preço: ");
 				prod.setPreco(sc.nextDouble());
