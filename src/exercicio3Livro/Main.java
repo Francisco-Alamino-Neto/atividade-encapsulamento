@@ -21,9 +21,11 @@ public class Main {
 			menu = sc.nextInt();
 		
 			if (menu == 1) {
+				sc.nextLine();
 				System.out.println("Insira o título: ");
 				livro.setTitulo(sc.nextLine());
 			} else if (menu == 2) {
+				sc.nextLine();
 				System.out.println("Insira o autor: ");
 				livro.setAutor(sc.nextLine());
 			} else if (menu == 3) {

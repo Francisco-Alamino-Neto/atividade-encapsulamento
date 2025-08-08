@@ -22,9 +22,11 @@ public class Main {
 			menu = sc.nextInt();
 			
 			if (menu == 1) {
+				sc.nextLine();
 				System.out.println("Insira o nome: ");
 				pers.setNome(sc.nextLine());
 			} else if (menu == 2) {
+				sc.nextLine();
 				System.out.println("Insira a classe: ");
 				pers.setClasse(sc.nextLine());
 			} else if (menu == 3) {

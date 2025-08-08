@@ -21,6 +21,7 @@ public class Main {
 			menu = sc.nextInt();
 		
 			if (menu == 1) {
+				sc.nextLine();
 				System.out.println("Insira o nome: ");
 				prod.setNome(sc.nextLine());
 			} else if (menu == 2) {
