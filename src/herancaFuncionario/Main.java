@@ -4,13 +4,13 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		Engenheiro eng = new Engenheiro("Denis", 7000, "42517852X", 547821);
+		Contador cont = new Contador("Danilo", 2000, "dfdsf", 2343);
 		
-		System.out.println(eng.getNome());
+		System.out.println(cont.calculoSalario(2000));
 		
-		eng.setNome("Heitor");
+		Eletricista elet = new Eletricista("Danilo", 2000, "dfdsf", false);
 		
-		System.out.println(eng.getNome());
+		System.out.println(elet.calculoSalario(2000));
 	}
 
 }

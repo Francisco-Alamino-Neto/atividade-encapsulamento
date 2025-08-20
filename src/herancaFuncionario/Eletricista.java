@@ -11,7 +11,7 @@ public class Eletricista extends Funcionario {
 	
 	@Override
 	public double calculoSalario(double salario) {
-		return salario = salario - 100 + 1000; //é possível criar métodos com mesmo nome mas valores diferentes
+		return salario = salario - 100 + 1000; //é possível criar métodos com mesmo nome, mas valores diferentes
 	}
 
 }
