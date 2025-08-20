@@ -4,12 +4,10 @@ public class Veiculos {
 	
 	private String nome;
 	private String cor;
-	private double tamanho;
 	
-	public Veiculos(String nome, String cor, double tamanho) {
+	public Veiculos(String nome, String cor) {
 		this.nome = nome;
 		this.cor = cor;
-		this.tamanho = tamanho;
 	}
 	
 	public String getNome() {
@@ -24,18 +22,9 @@ public class Veiculos {
 	public void setCor(String cor) {
 		this.cor = cor;
 	}
-	public double getTamanho() {
-		return tamanho;
-	}
-	public void setTamanho(double tamanho) {
-		this.tamanho = tamanho;
+	
+	public void iniciar() {
+		System.out.println("Veículo está iniciando...");
 	}
 	
-	public void fazerSom() {
-		System.out.print("O som é: ");
-	}
-	
-	public void comer() {
-		System.out.print("Como grama");
-	}
 }
