@@ -17,7 +17,7 @@ public class Veiculo {
 	}
 	
 	public float calcularTempo(float distancia) {
-		return (distancia / 00f) * 60;
+		return (distancia / 00f) * 60f;
 	}
 
 	public float calcularTempo(float distancia, int numero_paradas) {
