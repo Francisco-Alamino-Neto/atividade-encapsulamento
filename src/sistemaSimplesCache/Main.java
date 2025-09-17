@@ -9,7 +9,6 @@ public class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
-		String sair;
 		int menu;
 		int id = 1;
 
@@ -25,6 +24,8 @@ public class Main {
 		banco.add(new Pessoa(id++, "Aristoteles", 50));
 		banco.add(new Pessoa(id++, "Himari", 20));
 
+		boolean continuar = true;
+		
 		do {
 			System.out.println("Digite o ID de uma pessoa:");
 			menu = sc.nextInt();
@@ -64,11 +65,22 @@ public class Main {
 					}
 				}
 			}
-			System.out.println("Deseja sair?");
-			sair = sc.nextLine().toLowerCase();
-			sc.nextLine();
-		} while (!sair.equalsIgnoreCase("sim"));
+			String sair = "";
+            while (!sair.equalsIgnoreCase("sim") && !sair.equalsIgnoreCase("não")) {
+                System.out.println("Deseja sair? (sim/não)");
+                sair = sc.nextLine().toLowerCase();
 
-	}
+                if (sair.equalsIgnoreCase("não")) {
+                    continuar = true;  // Continua o programa
+                    break;  // Volta para o início do loop principal
+                } else if (sair.equalsIgnoreCase("sim")) {
+                    continuar = false;  // Encerra o programa
+                    break;  // Sai do loop de confirmação
+                } else {
+                    System.out.println("Resposta inválida, por favor responda com 'sim' ou 'não'.");
+                }
+            }
 
+        } while (continuar);  // O loop principal só continua se a resposta for "não" (deseja continuar)
+    }
 }
